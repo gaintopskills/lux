@@ -1,0 +1,389 @@
+<style>
+ * {
+   box-sizing: border-box;
+ }
+
+
+ body {
+   margin: 0;
+   scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+ }
+
+
+ .navbar {
+   overflow: hidden;
+   background-color: #000;
+   font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+ .navbar a {
+   float: left;
+   font-size: 16px;
+   color: white;
+   text-align: center;
+   padding: 14px 15px;
+   text-decoration: none;
+ }
+
+
+ .dropdown {
+   float: left;
+   overflow: hidden;
+  
+ }
+
+
+ .dropdown .dropbtn {
+   font-size: 16px;
+   border: none;
+   outline: none;
+   color: white;
+   padding: 14px 16px;
+   background-color: inherit;
+   font: inherit;
+   margin: 0;
+ }
+
+
+ .navbar a:hover,
+ .dropdown:hover .dropbtn {
+   background-color: red;
+ }
+
+
+ .dropdown-content {
+   display: block;
+   position: absolute;
+   background-color: rgba(0, 0, 0, 0.87);
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   width: 100%;
+   left: 0;
+   z-index: 1;
+   padding: 0 100px 0 100px;
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 0.4s ease, visibility 0.4s ease;
+   backdrop-filter: blur(6px); /* Blur effect behind the menu */
+ }
+/* Style for dropdown links with icons */
+.dropdown-content a {
+   display: flex;
+   align-items: center; /* Center icon and text vertically */
+   text-decoration: none;
+   color: white; /* Text color */
+   font-size: 16px;
+   padding: 8px 0; /* Space between items */
+ }
+
+
+ /* Style for the SVG icon */
+ .dropdown-content a img {
+ 
+   width: 50px; /* Set icon width */
+   height: 50px; /* Set icon height */
+   display: inline-block; /* Ensure inline layout */
+ }
+.dropdown:hover .dropdown-content {
+   opacity: 1;
+   visibility: visible;
+ }
+ @media screen and (max-width: 768px) {
+   .dropdown-content {
+       padding: 0; /* Remove padding for mobile */
+   }
+}
+
+
+ .dropdown-content .header {
+   background:;
+   padding: 16px;
+   color: white;
+ }
+
+
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }
+
+
+ /* Mobile-specific margin for the first row */
+ @media screen and (max-width: 768px) {
+   .first-row .dropdown-content .transparent{
+   
+   }
+ }
+
+
+  /* Create three equal columns */
+ .column {
+   float: left;
+   width: 33.33%;
+   padding: 10px;
+   height: 100%;
+ }
+
+
+ .column a {
+   float: none;
+   color: #fff;
+   padding: 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+
+
+ .column a:hover {
+   background-color: red;
+ }
+
+
+ /* Clear floats */
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+
+.phone-number{background-color: red;}
+  /* Logo Transition */
+  .logo {
+   width: 150px; /* Default Width */
+   transition: width 0.3s ease; /* Smooth resizing */
+ }
+
+
+ .shrink .logo {
+   width: 90px; /* Width when scrolled */
+  
+ }
+ a.logo {
+ margin: 5px 50px 0 20px !important;
+}
+ a.logo {
+ padding: 0 !important;
+}
+/* Hide the logo image on mobile screens */
+@media screen and (max-width: 768px) {
+   a.logo{
+     display: none;
+   }
+ }
+</style>
+<div id="header" class="sticky">
+<div class="navbar">
+ <!-- First Row -->
+ <div class="first-row">
+   <a class="logo"  href="#home"><img alt="Logo" src="/images/same-day-appalince-repair-logo-2.webp"></a>
+
+
+   <!-- Home Dropdown -->
+   <div class="dropdown">
+     <button class="dropbtn">Home</button>
+     <div class="dropdown-content">
+       <h3 style="color:#fff">Home Appliances We Repair</h3>
+       <div class="transparent"></div>
+       <div class="row">
+         <div class="column">
+          
+          <a> <img src="/svg/fridge.svg">Refrigerator</a>
+           <a href="#"><img src="/svg/freezer.svg">Freezer</a>
+           <a href="#"><img src="/svg/dishwasher.svg">Dishwasher</a>
+           <a href="#"><img src="/svg/dryer.svg">Dryer</a>
+           <a href="#"><img src="/svg/oven.svg">Oven</a>
+         </div>
+         <div class="column">
+           <a href="#">Microwave</a>
+           <a href="#">Cooktop</a>
+           <a href="#">Range Hood</a>
+           <a href="#">Ice Machine</a>
+           <a href="#">Slushie Machine</a>
+         </div>
+         <div class="column">
+        
+           <a href="#">Walk-in Cooler</a>
+           <a href="#">Walk-in Freezer</a>
+           <a href="#">Showcase Refrigerator</a>
+         </div>
+       </div>
+     </div>
+    
+   </div>
+    <!-- Commercial Dropdown -->
+    <div class="dropdown">
+     <button class="dropbtn">Commercial</button>
+     <div class="dropdown-content">
+       <h3 style="color:#fff">Commercial Appliances We Repair</h3>
+       <hr>
+       <div class="transparent"></div>
+       <div class="row">
+         <div class="column">
+          
+          <a> <img src="/svg/fridge.svg">Refrigerator</a>
+           <a href="#"><img src="/svg/freezer.svg">Freezer</a>
+           <a href="#"><img src="/svg/dishwasher.svg">Dishwasher</a>
+           <a href="#"><img src="/svg/dryer.svg">Dryer</a>
+           <a href="#"><img src="/svg/oven.svg">Oven</a>
+         </div>
+         <div class="column">
+           <a href="#">Microwave</a>
+           <a href="#">Cooktop</a>
+           <a href="#">Range Hood</a>
+           <a href="#">Ice Machine</a>
+           <a href="#">Slushie Machine</a>
+         </div>
+         <div class="column">
+        
+           <a href="#">Walk-in Cooler</a>
+           <a href="#">Walk-in Freezer</a>
+           <a href="#">Showcase Refrigerator</a>
+         </div>
+       </div>
+     </div>
+    
+   </div>
+    <!-- Areas Dropdown -->
+   <div class="dropdown">
+     <button class="dropbtn">Areas</button>
+     <div class="dropdown-content">
+       <div class="transparent"></div>
+       <div class="row">
+         <div class="column">
+           <a href="#">Los Angeles</a>
+           <a href="#">Beverly Hills</a>
+           <a href="#">Pasadena</a>
+           <a href="#">Santa Monica</a>
+           <a href="#">Glendale</a>
+         </div>
+         <div class="column">
+           <a href="#">Orange County</a>
+           <a href="#">Long Beach</a>
+           <a href="#">West Hollywood</a>
+           <a href="#">Torrance</a>
+           <a href="#">Sherman Oaks</a>
+         </div>
+         <div class="column">
+         
+           <a href="#">Burbank</a>
+           <a href="#">Encino</a>
+           <a href="#">Culver City</a>
+           <a href="#">Anaheim</a>
+         </div>
+       </div>
+     </div>
+   </div>
+
+
+   <!-- Brands Dropdown -->
+   <div class="dropdown">
+     <button class="dropbtn">Brands</button>
+     <div class="dropdown-content">
+       <div class="transparent"></div>
+       <div class="row">
+         <div class="column">
+           <a href="#">LG</a>
+           <a href="#">Samsung</a>
+           <a href="#">Whirlpool</a>
+           <a href="#">Bosch</a>
+           <a href="#">GE</a>
+         </div>
+         <div class="column">
+           <a href="#">Sub-Zero</a>
+           <a href="#">Wolf</a>
+           <a href="#">Thermador</a>
+           <a href="#">Viking</a>
+           <a href="#">Kenmore</a>
+         </div>
+         <div class="column">
+           <a href="#">Miele</a>
+           <a href="#">Dacor</a>
+           <a href="#">Fisher & Paykel</a>
+           <a href="#">Monogram</a>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- Close Button -->
+<button class="absolute top-4 right-4 z-50 flex h-8 w-8 items-center justify-center bg-red-500 text-white rounded-full focus:outline-none focus:ring-2 focus:ring-red-300 md:hidden">
+ <!-- Icon for Close -->
+ <span class="relative block h-5 w-5">
+   <span
+     class="absolute block h-[2px] w-5 bg-white rotate-45"
+     style="top: 50%; transform-origin: center; transform: rotate(45deg) translateY(-50%);"
+   ></span>
+   <span
+     class="absolute block h-[2px] w-5 bg-white -rotate-45"
+     style="top: 50%; transform-origin: center; transform: rotate(-45deg) translateY(-50%);"
+   ></span>
+ </span>
+</button>
+
+
+ <!-- Prices Dropdown -->
+ <div class="dropdown">
+   <button class="dropbtn">Prices</button>
+   <div class="dropdown-content">
+   
+     <div class="row">
+       <div class="column">
+         <a href="#">Refrigerator Repair</a>
+         <a href="#">Oven Repair</a>
+         <a href="#">Dishwasher Repair</a>
+         <a href="#">Dryer Repair</a>
+       </div>
+       <div class="column">
+         <a href="#">Washer Repair</a>
+         <a href="#">Microwave Repair</a>
+         <a href="#">Cooktop Repair</a>
+         <a href="#">Range Hood Repair</a>
+       </div>
+       <div class="column">
+         <a href="#">Get a Quote</a>
+         <a href="#">Same Day Pricing</a>
+         <a href="#">Custom Requests</a>
+       </div>
+     </div>
+   </div>
+ </div>
+ <a href="#top" class="phone-number">(323) 870-4790</a>
+
+
+</div></div>
+
+
+<!-- Arrow Up Button -->
+
+
+<style>
+ .sticky {
+   position: relative;
+
+
+   color: white;
+ }
+ .fixed {
+   position: fixed;
+   top: 0;
+   width: 100%;
+    z-index: 1000;
+ }
+</style>
+
+
+<script>
+ const header = document.getElementById('header');
+ const logo = document.querySelector('.logo');
+ const stickyOffset = header.offsetTop;
+
+
+ window.addEventListener('scroll', () => {
+   if (window.pageYOffset > stickyOffset) {
+     header.classList.add('fixed', 'shrink');
+   } else {
+     header.classList.remove('fixed', 'shrink');
+   }
+ });
+</script>
