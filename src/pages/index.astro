@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro'
 import { Hero } from '../components/Hero.jsx'
 import { Navbar } from '../components/Navbar.jsx'
-import { Features1 } from '../components/Features1.jsx'
+import { MegaMenu } from '../components/MegaMenu.jsx'
 import { Features2 } from '../components/Features2.jsx'
 import { Testimonials } from '../components/Testimonials.jsx'
 import { FeaturesDiagonal } from '../components/FeaturesDiagonal.jsx'
@@ -17,7 +17,7 @@ import '../styles/Diagonals.css'
 ---
 
 <Layout title="Tailcast">
-  <Navbar client:load />
+  <MegaMenu client:load />
  
   <Footer />
   <ScrollUpButton client:load />

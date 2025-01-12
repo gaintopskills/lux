@@ -1,0 +1,172 @@
+ * {
+   box-sizing: border-box;
+ }
+
+
+ body {
+   margin: 0;
+   scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+ }
+
+
+ .navbar {
+   overflow: hidden;
+   background-color: #000;
+   font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+ .navbar a {
+   float: left;
+   font-size: 16px;
+   color: white;
+   text-align: center;
+   padding: 14px 15px;
+   text-decoration: none;
+ }
+
+
+ .dropdown {
+   float: left;
+   overflow: hidden;
+  
+ }
+
+
+ .dropdown .dropbtn {
+   font-size: 16px;
+   border: none;
+   outline: none;
+   color: white;
+   padding: 14px 16px;
+   background-color: inherit;
+   font: inherit;
+   margin: 0;
+ }
+
+
+ .navbar a:hover,
+ .dropdown:hover .dropbtn {
+   background-color: red;
+ }
+
+
+ .dropdown-content {
+   display: block;
+   position: absolute;
+   background-color: rgba(0, 0, 0, 0.87);
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   width: 100%;
+   left: 0;
+   z-index: 1;
+   padding: 0 100px 0 100px;
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 0.4s ease, visibility 0.4s ease;
+   backdrop-filter: blur(6px); /* Blur effect behind the menu */
+ }
+/* Style for dropdown links with icons */
+.dropdown-content a {
+   display: flex;
+   align-items: center; /* Center icon and text vertically */
+   text-decoration: none;
+   color: white; /* Text color */
+   font-size: 16px;
+   padding: 8px 0; /* Space between items */
+ }
+
+
+ /* Style for the SVG icon */
+ .dropdown-content a img {
+ 
+   width: 50px; /* Set icon width */
+   height: 50px; /* Set icon height */
+   display: inline-block; /* Ensure inline layout */
+ }
+.dropdown:hover .dropdown-content {
+   opacity: 1;
+   visibility: visible;
+ }
+ @media screen and (max-width: 768px) {
+   .dropdown-content {
+       padding: 0; /* Remove padding for mobile */
+   }
+}
+
+
+ .dropdown-content .header {
+   background:;
+   padding: 16px;
+   color: white;
+ }
+
+
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }
+
+
+ /* Mobile-specific margin for the first row */
+ @media screen and (max-width: 768px) {
+   .first-row .dropdown-content .transparent{
+   
+   }
+ }
+
+
+  /* Create three equal columns */
+ .column {
+   float: left;
+   width: 33.33%;
+   padding: 10px;
+   height: 100%;
+ }
+
+
+ .column a {
+   float: none;
+   color: #fff;
+   padding: 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+
+
+ .column a:hover {
+   background-color: red;
+ }
+
+
+ /* Clear floats */
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+
+.phone-number{background-color: red;}
+  /* Logo Transition */
+  .logo {
+   width: 150px; /* Default Width */
+   transition: width 0.3s ease; /* Smooth resizing */
+ }
+
+
+ .shrink .logo {
+   width: 90px; /* Width when scrolled */
+  
+ }
+ a.logo {
+ margin: 5px 50px 0 20px !important;
+}
+ a.logo {
+ padding: 0 !important;
+}
+/* Hide the logo image on mobile screens */
+@media screen and (max-width: 768px) {
+   a.logo{
+     display: none;
+   }
+ }
